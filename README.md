@@ -2,7 +2,7 @@
 
 A simple Windows Forms application that processes SRT subtitle files and ensures proper display of Arabic text. The tool adds the Unicode Right-to-Left Embedding (RLE) character at the start of each Arabic line, fixing common punctuation and bidirectional formatting issues.
 
-<img width="702" height="192" alt="image" src="https://github.com/user-attachments/assets/c67a379e-8751-4351-b889-fb37be913803" />
+<img width="702" height="312" alt="image" src="https://github.com/user-attachments/assets/0735371a-15ae-4fa5-b8f8-815f975a3bf3" />
 
 ## Features
 
@@ -15,6 +15,14 @@ A simple Windows Forms application that processes SRT subtitle files and ensures
 - Provides a clean, one-click interface for quick processing
 
 - Outputs a new SRT file
+
+## Sample
+
+### Before
+<img width="398" height="472" alt="image" src="https://github.com/user-attachments/assets/c1a95ab0-c0a3-4cda-981f-5b490b9e2e85" />
+
+### After
+<img width="395" height="474" alt="image" src="https://github.com/user-attachments/assets/a8166082-d677-4e3e-b747-34446b673fbb" />
 
 ## Installation
 
