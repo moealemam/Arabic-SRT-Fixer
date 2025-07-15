@@ -16,6 +16,8 @@ A simple Windows Forms application that processes SRT subtitle files and ensures
 
 - Outputs a new SRT file
 
+- Can process multiple SRT files at once
+
 ## Sample
 
 ### Before
@@ -42,13 +44,13 @@ OR
 
 1. Launch `ArabicSrtFixer.exe`
 
-2. Click **Open** and select your `.srt` file or drag and drop it onto the input field
+2. Click **Open** and select your `.srt` file/s or drag and drop one/multiple onto the input field
 
 3. Specify the output path if needed
 
 4. Click **Process**
 
-The application will process the file and display a confirmation once complete. You can then load the fixed subtitle in your media player.
+The application will process the file/s and display a confirmation once complete. You can then load the fixed subtitle in your media player.
 
 ## Building from Source
 
