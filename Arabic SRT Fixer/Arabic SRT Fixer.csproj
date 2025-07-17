@@ -8,6 +8,8 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>Arabic-SRT-Fixer_icon.ico</ApplicationIcon>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>C:\Users\alema\Projects\Keys\Arabic-SRT-Fixer.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
