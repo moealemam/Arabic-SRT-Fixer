@@ -48,6 +48,7 @@
             this.labelInput.Size = new System.Drawing.Size(80, 15);
             this.labelInput.TabIndex = 0;
             this.labelInput.Text = "Input SRT File:";
+            this.labelInput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
             // 
             // textBoxInput
             // 
@@ -56,6 +57,7 @@
             this.textBoxInput.Name = "textBoxInput";
             this.textBoxInput.Size = new System.Drawing.Size(500, 23);
             this.textBoxInput.TabIndex = 1;
+            this.textBoxInput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             this.textBoxInput.DragDrop += new System.Windows.Forms.DragEventHandler(this.InputFieldDrop);
             this.textBoxInput.DragEnter += new System.Windows.Forms.DragEventHandler(this.InputFieldDragEnter);
             // 
@@ -67,6 +69,7 @@
             this.buttonBrowseInput.TabIndex = 2;
             this.buttonBrowseInput.Text = "Browse...";
             this.buttonBrowseInput.UseVisualStyleBackColor = true;
+            this.buttonBrowseInput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             this.buttonBrowseInput.Click += new System.EventHandler(this.InputBrowseButtonClick);
             // 
             // labelOutput
@@ -77,6 +80,7 @@
             this.labelOutput.Size = new System.Drawing.Size(82, 15);
             this.labelOutput.TabIndex = 3;
             this.labelOutput.Text = "Output SRT File:";
+            this.labelOutput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
             // 
             // textBoxOutput
             // 
@@ -84,6 +88,7 @@
             this.textBoxOutput.Name = "textBoxOutput";
             this.textBoxOutput.Size = new System.Drawing.Size(500, 23);
             this.textBoxOutput.TabIndex = 4;
+            this.textBoxOutput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             // 
             // buttonBrowseOutput
             // 
@@ -93,6 +98,7 @@
             this.buttonBrowseOutput.TabIndex = 5;
             this.buttonBrowseOutput.Text = "Browse...";
             this.buttonBrowseOutput.UseVisualStyleBackColor = true;
+            this.buttonBrowseOutput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             this.buttonBrowseOutput.Click += new System.EventHandler(this.OutputBrowseButtonClick);
             // 
             // labelPrefix
@@ -103,6 +109,7 @@
             this.labelPrefix.Size = new System.Drawing.Size(120, 15);
             this.labelPrefix.TabIndex = 8;
             this.labelPrefix.Text = "Output name suffix:";
+            this.labelPrefix.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
             // 
             // textBoxPrefix
             // 
@@ -111,6 +118,7 @@
             this.textBoxSuffix.Size = new System.Drawing.Size(100, 23);
             this.textBoxSuffix.TabIndex = 9;
             this.textBoxSuffix.Text = "_RLE";
+            this.textBoxSuffix.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
             // 
             // buttonProcess
             // 
@@ -120,6 +128,7 @@
             this.buttonProcess.TabIndex = 6;
             this.buttonProcess.Text = "Process";
             this.buttonProcess.UseVisualStyleBackColor = true;
+            this.buttonProcess.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left;
             this.buttonProcess.Click += new System.EventHandler(this.ProcessButtonClick);
             // 
             // labelStatus
@@ -130,6 +139,7 @@
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(0, 15);
             this.labelStatus.TabIndex = 7;
+            this.labelStatus.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             // 
             // progressBar
             // 
@@ -137,6 +147,7 @@
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(500, 23);
             this.progressBar.TabIndex = 10;
+            this.progressBar.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             // 
             // textBoxSummary
             // 
@@ -147,6 +158,7 @@
             this.textBoxSummary.ReadOnly = true;
             this.textBoxSummary.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxSummary.TabIndex = 11;
+            this.textBoxSummary.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
             // 
             // Form1
             // 
@@ -165,8 +177,8 @@
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.textBoxSummary);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+            this.MaximizeBox = true;
             this.Name = "MainForm";
             this.Text = "Arabic SRT Fixer";
             this.ResumeLayout(false);

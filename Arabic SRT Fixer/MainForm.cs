@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using System.Configuration;
 
 namespace Arabic_SRT_Fixer
 {
@@ -13,6 +14,27 @@ namespace Arabic_SRT_Fixer
         public MainForm()
         {
             InitializeComponent();
+            this.Load += MainForm_Load;
+            this.FormClosing += MainForm_FormClosing;
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // Restore window size and location
+            var settings = Properties.Settings.Default;
+            if (settings.WindowSize.Width > 0 && settings.WindowSize.Height > 0)
+                this.Size = settings.WindowSize;
+            if (settings.WindowLocation.X >= 0 && settings.WindowLocation.Y >= 0)
+                this.Location = settings.WindowLocation;
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Save window size and location
+            var settings = Properties.Settings.Default;
+            settings.WindowSize = this.Size;
+            settings.WindowLocation = this.Location;
+            settings.Save();
         }
 
         private void InputBrowseButtonClick(object sender, EventArgs e)
