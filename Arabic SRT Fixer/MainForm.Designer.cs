@@ -102,7 +102,7 @@
             this.labelPrefix.Name = "labelPrefix";
             this.labelPrefix.Size = new System.Drawing.Size(120, 15);
             this.labelPrefix.TabIndex = 8;
-            this.labelPrefix.Text = "Output file name suffix:";
+            this.labelPrefix.Text = "Output name suffix:";
             // 
             // textBoxPrefix
             // 
